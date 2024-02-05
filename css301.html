@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #layout {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #nav {
+            flex-basis: 100%;
+            border: 1px solid seagreen;;
+            padding: 20px;
+        }
+
+        #sidebar {
+            flex-basis: 20%;
+            border-left: 1px solid seagreen;
+            padding: 20px;
+            border-bottom: 1px solid seagreen;
+        }
+
+        #content {
+            flex-basis: 80%;
+            padding: 20px;
+            border-bottom: 1px solid seagreen;
+            border-right: 1px solid seagreen;
+            border-left: 1px solid seagreen;
+
+        }
+
+        @media (max-width: 1000px) and (min-width: 700px) {
+            #layout {
+                background-color: bisque;
+            }
+
+            #sidebar {
+                display: none;
+            }
+
+            #content {
+                flex-basis: 100%;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div id="layout">
+        <div id="nav">
+            Navigation Bar here
+        </div>
+        <div id="sidebar">
+            Sidebar here
+        </div>
+        <div id="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, possimus illo dolores vero odit voluptas incidunt ipsum facere culpa sequi perferendis adipisci nobis repudiandae temporibus dolorem modi id minima! Iste.
+        </div>
+    </div>
+</body>
+</html>
